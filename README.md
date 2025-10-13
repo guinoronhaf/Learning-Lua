@@ -43,23 +43,30 @@ print 'hello'
  - **boolean** -> `true/false`
  - [**table**](https://www-tutorialspoint-com.translate.goog/lua/lua_tables.htm?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt&_x_tr_pto=tc)
 
+ To check the type of something in _Lua_, you can type:
+
+ ```lua
+ local variable = "string"
+ print(type(variable)) -- >> string
+ ```
+
  ### Variables
  
- To initialize/declare a global _variable_ in _Lua_, we can use the **keyword** `local`.
+ To initialize/declare a global _variable_ in _Lua_, we can type:
 
  ```lua
  variable = "lua"
  secondVariable = nil
  ```
 
- Udefined variables return nil
+ Udefined variables return nil:
 
  ```lua
  -- this is not an error
  test = anUnknowVariable -- Now test = nil.
  ```
 
-You can also declare variables in a local scope:
+You can also declare variables in a local scope using keyword `local`:
 
 ```lua
 local variable = "lua"

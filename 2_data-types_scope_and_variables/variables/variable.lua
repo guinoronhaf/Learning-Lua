@@ -13,4 +13,4 @@ test = unkownValue
 
 print(test)
 
-print 'hello'
+print(type(b))
