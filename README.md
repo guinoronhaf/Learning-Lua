@@ -71,3 +71,28 @@ You can also declare variables in a local scope using keyword `local`:
 ```lua
 local variable = "lua"
 ```
+
+## Math and math library
+
+We can convert a string into number using the `tonumber` function:
+
+```lua
+str = "22"
+print(type(tonumber(str))) -- >> number
+```
+
+To _add_ and _subtract_ in _Lua_, we can use the same structure used in other languages.
+
+Here are some math operations:
+
+```lua
+print(2 + 3 - 13 + 10) -- >> 2
+print(2 ^ 5) -- >> 32
+print(5 ^ 2) -- >> 25
+print(5 * 4) -- >> 20
+print(3 * 6 - 2) -- >> 16
+print(5 * 9 * (2 + 5)) -- >> 315
+print(10 / 2) -- >> 5
+print(100 / 3.14) -- >> 31.847133...
+print(10 % 3) -- >> 1
+```

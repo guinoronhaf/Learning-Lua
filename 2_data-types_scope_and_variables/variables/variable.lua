@@ -14,3 +14,7 @@ test = unkownValue
 print(test)
 
 print(type(b))
+
+-- tonumber function
+str = "22"
+print(type(tonumber(str)))
