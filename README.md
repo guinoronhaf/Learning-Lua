@@ -96,3 +96,30 @@ print(10 / 2) -- >> 5
 print(100 / 3.14) -- >> 31.847133...
 print(10 % 3) -- >> 1
 ```
+
+## Conditions
+
+On lua **condition structures**, we use some special _keywords_, such as `then`, `elseif` and `end`.
+
+```lua
+local variable = 'batman'
+
+if variable ~= 'batman' then
+    print("no batman!")
+elseif variable ~= 'superman' then
+    print("neither superman!")
+else
+    print("maybe flash!")
+end
+```
+
+In _Lua_, only `nil` and `false` and **_falsy_**. `0` and `''` are true!
+
+> [!TIP]
+> _Lua_ has support for **ternary operator**. It means you can use this structure to define the value of a variable, for example:
+
+```lua
+booleanVariable = true
+ans = booleanVariable and 'yes' or 'no'
+print(ans) -- >> 'yes'
+```
