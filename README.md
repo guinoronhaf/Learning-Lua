@@ -113,7 +113,8 @@ else
 end
 ```
 
-In _Lua_, only `nil` and `false` and **_falsy_**. `0` and `''` are true!
+> [!NOTE]
+> In _Lua_, only `nil` and `false` and **_falsy_**. `0` and `''` are true!
 
 > [!TIP]
 > _Lua_ has support for **ternary operator**. It means you can use this structure to define the value of a variable, for example:
