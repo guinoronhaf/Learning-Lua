@@ -66,6 +66,9 @@ print 'hello'
  test = anUnknowVariable -- Now test = nil.
  ```
 
+ > [!NOTE]
+ > Variables whose names are not preceded by `local` and that starts with `_` followed by a **capital letter** are considered **global** by default. That is a **valid name**. Take a look at [**_G**](https://learnxinyminutes.com/lua/).
+
 You can also declare variables in a local scope using keyword `local`:
 
 ```lua
