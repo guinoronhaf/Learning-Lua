@@ -127,3 +127,14 @@ booleanVariable = true
 ans = booleanVariable and 'yes' or 'no'
 print(ans) -- >> 'yes'
 ```
+
+## String in Lua
+
+In _Lua_, strings can be represented using both double or signgle quotes. Moreover, you may also want to declare a variable in which the string is composed by multiple lines. In this case, you can type `[[` before the caracters and `]]` after them:
+
+```lua
+local str = [[
+        Hey, everyone!
+        My name is John.
+]]
+```
