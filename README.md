@@ -138,3 +138,42 @@ local str = [[
         My name is John.
 ]]
 ```
+
+In order to obtain lowercase and uppercase strings, we can use functions associated with the _string_ type, such as:
+
+```lua
+local upper = "UPPER"
+local lower = "lower"
+print(string.lower(upper)) -- upper
+print(string.upper(lower)) -- LOWER
+```
+
+To have access to the length of the string, we can use `#` or `string.len`:
+
+```lua
+local str = "Hello, World!"
+print(#str) -- 13
+print(string.len(str)) -- 13
+```
+
+### Substrings
+
+In _Lua_, to get a substring, we use `string.sub(string, start, end)`; _end_ included.
+
+> [!NOTE]
+> Indexes begin from **1** in Lua.
+
+```lua
+str = "Hello, World!"
+print(string.sub(str, 1, 5)) -- Hello
+```
+
+### Formating strings
+
+To format strings in _Lua_, we use `string.format`:
+
+```lua
+print(string.format("pi: %.2f\nMy age is %i", math.pi, 18)) -- f for "float" and i for "integer"
+--- >> pi: 3,14
+--- >> My age is 18
+
