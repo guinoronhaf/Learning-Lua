@@ -244,7 +244,7 @@ In _Lua_, while loops work just the same way we are already familiar with.
 
  ```lua
  while true do
- print("infinite")
+     print("infinite")
  end 
  ```
 
