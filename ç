@@ -250,35 +250,4 @@ In _Lua_, while loops work just the same way we are already familiar with.
 
  ### `repeat - until` structure
 
-_Lua_ allows us to use a loop structure by which we ensure at least one execution/repetition.
-
- ```lua
-local x = 11
--- let's try with while first
-while x < 10 do
-   print("Hey!")
-   x = x + 1
-end
--- now with repeat-until
-repeat
-    print("Hey!")
-    x = x + 1
-until x > 10
- ```
-
-We will see that `repat-until` allows at least one execution.
-
-```diff
-     # nothing for while
-Hey! # one repetition for repeat-until
-```
-
-But what if we use `false` as the _until_ complement? What will be the ouput?
-
-```lua
-repeat
-    print("hey!")
-until false
-```
-
-Well, it **will print "hey!" forever!** It happens because, in _Lua_, only `nil` and `false` are _falsy_, which means that this "until condition" will never be true.
+ _Lua_ allows us to use a loop structure by which we ensure at least one execution/repetition.
